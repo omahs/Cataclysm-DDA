@@ -99,8 +99,6 @@ Hub now offers armor set printing after HWP is unlocked
 Implement basic saline infusion to help with blood loss
 Adds treetops and makes trees climbable
 Allow bird wings to glide
-Cats can hide
-Add ETHEREAL character flag, add [Magiclysm] spell that uses it
 Faction camps store, track, and consume vitamins
 
 
@@ -189,8 +187,6 @@ Addition of many new books, from religious texts to magazines, mainly for fluff 
 Modularize Desert Eagle, add .50 AE
 Add WIP Limb Stuff Mod
 [Limb Mod]Limbify Compound Eyes
-Add a recipe to convert a short sledge back to a normal sledge
-Revamp the Chemist NPC JSON
 Add a flag to dermatik to allow white/black listing
 
 
@@ -245,10 +241,7 @@ Hide AIM during directional prompts
 Keep displaying selected outfit throughout chargen
 High characters now see fancy smiley faces and exclamations in their message log.
 Can't accidentally select full deconstruction if simple deconstruction is available
-Fixed the [f]ire menu's [Draw what?] screen to not repeat a single gun name
-Destination is no longer cleared when canceling automove/autodrive
 Show dangerous areas around notes visually on the map
-Dangerous areas created by notes are now circular when circular distances are enabled
 Show danger radius in note list
 
 
@@ -347,13 +340,8 @@ Paraclesian Map extras
 [Xedra Evolved] Add Great Tree elemental eruption map special
 [MoM] Add higher-level hobbies to start with more powers
 [Magiclysm] Add chance of feral mages at magic cabins
-[MoM] Create Dimension-Lost Scenario, move Itzcuauhtli Corps Liaison to scenario-only
-Added 6 bash melee damage to Hammerhand
-[Magiclysm] More (and more thematic) trolls
 [Magiclysm] Druid tower
-[Magiclysm] Add magical arrows and quivers
-[Magiclysm] Even more spells
-Replace global_val with context_val in Bombastic Perks documentation.
+[Magiclysm] Add ETHEREAL character flag, add [Magiclysm] spell that uses it
 
 
 ## Balance:
@@ -406,8 +394,6 @@ Activity suit is actually waterproof, soft surfaces are less slippery, boomer on
 Visitors Passes and Freight Badges no longer reveal roads
 Hub14 no longer gives infinite pricey schematics
 Removed FANCY and SUPER_FANCY from a bunch of items
-Normalize chiting plating kit recipes
-Rename 'Think something' to 'Emote', make it more freeform
 
 
 ## Bugfixes:
@@ -519,23 +505,10 @@ Autodrive over bridges
 Stable vehicle speeds with autotravel
 Count charges in all nearby smoking racks to crafting inventory
 Fix crash from reachability zones checking dead NPCs.
-Fix tow cables crashing and not keeping connections properly
 Squashed several bugs making it far easier to detect traps than intended. Beware of landmines.
 Properly implement recording of achievements on saving
 Don't let the player store items in corpses
-[Xedra Evolved] Fix Arvore forest-detection EoCs
-Misc spelling fixes to Hub 01 Ancillae dialogue
-Fix crash when new achievement is completed when loading past game info in achievement UI
-[Magiclysm] Switch Anvil item to ANVIL quality for weapons of Asgard
-[Xedra Evolved] Fix Traverse the Wilds range
-[Xedra Evolved] Fix the Wind Blows, the Willow Bends duration
-Define Rubik's debt depth
 Killing unaware hostile NPCs no longer debuffs morale. Killing innocents has better interaction with traits. Butchering ferals causes guilt again.
-Fixed map note list not updating when removing a danger mark
-Fix MOLLE pouches hiding stored items and showing incorrect movecosts
-Ponchos are BELTED and OVERSIZE, like cloaks. Updates materials and removes WATERPROOF from some outerwear
-Fixed typos in advanced solar panel vehicle part
-Add 'MYCUS' use action & 'mycus' mutation info to json_flags.md
 
 
 ## Performance:
@@ -603,7 +576,6 @@ Simplify/jsonify NPC generation from npc classes
 Consolidate `suspendable` and `no_resume` activity parameters
 Items warn on exceeding max volume, unify max volume as a game constant
 Migrate names to snippets & add weighted snippets
-Change the construction palette to be more varied
 
 
 ## Build:
@@ -624,7 +596,6 @@ Fallback to O.I when version.h is empty
 ## I18N and A11Y:
 Add percentage-translated statistic to language selection
 Make furniture->lockpick_message translatable
-Discard developer comments from translation/Add some context
 Adds a gendered_line to some dialogues.
 
 
